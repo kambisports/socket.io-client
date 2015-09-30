@@ -5140,7 +5140,7 @@ module.exports = (function() {
 		typeof define.amd == 'object' &&
 		define.amd
 	) {
-		define(function() {
+		define('utf8', [], function() {
 			return utf8;
 		});
 	}	else if (freeExports && !freeExports.nodeType) {
@@ -6968,7 +6968,7 @@ module.exports=_dereq_(37)
 
   // Export for asynchronous module loaders.
   if (isLoader) {
-    define(function () {
+    define('json3', [], function () {
       return JSON3;
     });
   }
